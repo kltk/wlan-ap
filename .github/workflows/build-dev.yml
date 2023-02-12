@@ -33,6 +33,12 @@ jobs:
         git config --global user.name "Your Name"
         make -j TARGET=${{ matrix.target }}
 
+    - name: Organize files
+      run: |
+        cd openwrt
+        ./scripts/diffconfig.sh > bin/targets/ipq60xx/generic/diff.config
+        cp .config bin/targets/ipq60xx/generic/config
+
     - name: Upload bin directory
       uses: actions/upload-artifact@main
       with:
