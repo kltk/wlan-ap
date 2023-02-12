@@ -15,13 +15,13 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     outputs:
       x64_vm_image_name: ${{ steps.package_and_upload_image.outputs.x64_vm_image_name }}
     strategy:
       fail-fast: false
       matrix:
-        target: ['glinet_axt1800', 'yuncore_ax840']
+        target: ['glinet_axt1800']
 
     steps:
     - uses: actions/checkout@v3
