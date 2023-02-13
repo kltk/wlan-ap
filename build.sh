@@ -12,7 +12,7 @@ fi
 
 if [ ! "$(ls -A $BUILD_DIR)" ]; then
 	python3 setup.py --setup || exit 1
-    
+
 else
 	python3 setup.py --rebase
 	echo "### OpenWrt repo already setup"
@@ -24,4 +24,4 @@ cd -
 
 echo "### Building image ..."
 cd $BUILD_DIR
-make -j$(nproc) V=s
+make -j$(nproc) || make -j$(nproc) V=s
