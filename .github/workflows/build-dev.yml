@@ -15,7 +15,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     outputs:
       x64_vm_image_name: ${{ steps.package_and_upload_image.outputs.x64_vm_image_name }}
     strategy:
