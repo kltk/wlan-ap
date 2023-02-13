@@ -8,5 +8,6 @@ feeds:
     path: ../../feeds/ipq807x_v5.4
 include:
   - wifi-ax-v54
+  - ucentral-ap
 packages:
   - ipq60xx
