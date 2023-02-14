@@ -37,11 +37,11 @@ packages:
   - tcpdump
   - tip-defaults
   - tmate
-  - ucentral-client
-  - ucentral-dataplane
-  - ucentral-event
-  - ucentral-schema
-  - ucentral-tools
+  # - ucentral-client
+  # - ucentral-dataplane
+  # - ucentral-event
+  # - ucentral-schema
+  # - ucentral-tools
   - usteer2
   - ucrun
   - ucode
@@ -71,7 +71,7 @@ diffconfig: |
   CONFIG_OPENSSL_WITH_TLS13=y
   # CONFIG_PACKAGE_wpad is not set
   # CONFIG_PACKAGE_wpad-basic-wolfssl is not set
-  # CONFIG_PACKAGE_dnsmasq is not set 
+  # CONFIG_PACKAGE_dnsmasq is not set
   CONFIG_IMAGEOPT=y
   CONFIG_PREINITOPT=y
   CONFIG_TARGET_PREINIT_SUPPRESS_STDERR=y
